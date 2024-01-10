@@ -150,7 +150,7 @@ const projects = () => {
             </div>
 
             <div className="col-span-6 sm:col-span-12">
-              <Project type="DApp" img={project5} title="Dotlaunch Web App" link="https://dotlaunch.netlify.ap" github="https://github.com/williamslsy/dotlaunch" />
+              <Project type="DApp" img={project5} title="Dotlaunch Web App" link="https://dotlaunch.netlify.app" github="https://github.com/williamslsy/dotlaunch" />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project type="Ecommerce WebApp" img={project6} title="ComfySloth" link="https://mycomfysloth.netlify.app/" github="https://github.com/williamslsy/mycomfysloth" />
