@@ -1,0 +1,95 @@
+export const experienceData = [
+  {
+    id: 1,
+    position: 'Lead Developer | React-Next Frontend Developer | Full-Stack',
+    company: 'Zuzalu-Zuzapp Core Team',
+    description: "At the direction of Ethereum's founder, Vitalik Buterin, I played a pivotal role in building Zuzapp, a ZK super app for coordination efforts in the Zuzalu network state community",
+    period: 'July 2023 - Present',
+    location: 'Lisbon, Portugal',
+  },
+  {
+    id: 2,
+    position: 'Full-Stack Software Engineer',
+    company: 'Ethereum Community Fund',
+    description:
+      'Worked on a team responsible for the delivery of a web app that provides a set of tools and features which enable its community of users to coordinate ideas, influence, and funds, that is peer-to-peer, open, and includes its own incentive system of user actions to ensure accountability, quality engagement and verifiable information over time.',
+    period: 'Sep 2022 - June 2023',
+    location: 'Lisbon, Portugal',
+  },
+  {
+    id: 3,
+    position: 'Senior Frontend Engineer| DApp Developer',
+    company: 'Dotlaunch Inc',
+    description:
+      'At DotLaunch, the decentralized multichain launchpad, I Led a team of 4 developers responsible for developing a fully decentralized cross chained launchpad with multi-blockchain interoperability. I was entrusted with curating the frontend experience. As a dedicated frontend developer, my focus revolved around creating intuitive and visually captivating interfaces. This ensured effortless user navigation across diverse blockchain chains. Seamlessly blending design with functionality, .',
+    period: 'Oct 2020 - Aug 2022',
+    location: 'Dubai, UAE',
+  },
+  {
+    id: 4,
+    position: 'Frontend Web and DApp Developer',
+    company: 'Artburst',
+    description: 'Responsible for developing the front end of the NFT marketplace platform enabling artists and creators to collaborate and connect in a chain agnostic environment.',
+    period: 'Jun 2019 - Sep 2020',
+    location: 'Dubai, UAE',
+  },
+  {
+    id: 5,
+    position: 'Frontend Developer | Web Designer | SEO Specialist',
+    company: 'Ultramind',
+    description: 'Was responsible for conceptualizing and coordinating the development of an e-commerce pharmaceutical brand.',
+    period: 'Jun 2018 - May 2019',
+    location: 'Lagos, Nigeria',
+  },
+  {
+    id: 6,
+    position: 'Wordpress Developer | Marketing Lead | Social Media',
+    company: 'thelegitstore.ng',
+    description: 'Built out the entire web experience. Developed and coordinated online promotion strategies to implement PPC campaigns and boost traffic by 500%.',
+    period: 'Dec 2016 - Nov 2017',
+    location: 'Lagos, Nigeria',
+  },
+];
+
+export const educationData = [
+  {
+    id: 1,
+    position: 'Senior React Developer',
+    company: '',
+    description: 'Triplebyte Advanced React Engineering Certification',
+    period: '2022-2023',
+    location: 'Triplebyte',
+  },
+  {
+    id: 2,
+    position: 'Advanced Solidity Developer',
+    company: '',
+    description: 'Mastering Solidity and Smart Contracts - Blockchain Development: Programming & Ethereum Stack',
+    period: '2022-2023',
+    location: 'Udemy',
+  },
+  {
+    id: 3,
+    position: 'Full-Stack Web Developer',
+    company: '',
+    description: 'The Complete Web Developer Bootcamp',
+    period: '2020-2021',
+    location: 'London App Brewery',
+  },
+  {
+    id: 4,
+    position: 'Full-Stack Web Developer',
+    company: '',
+    description: 'Zero-To-Mastery Academy',
+    period: '2020-2021',
+    location: 'Udemy',
+  },
+  {
+    id: 5,
+    position: 'React Developer',
+    company: '',
+    description: 'Code with Mosh: Mastering React.',
+    period: '2019-2020',
+    location: 'Mosh Academy',
+  },
+];
