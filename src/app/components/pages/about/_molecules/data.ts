@@ -12,7 +12,7 @@ export const experienceData = [
     position: 'Full-Stack Software Engineer',
     company: 'Ethereum Community Fund',
     description:
-      'Worked on a team responsible for the delivery of a web app that provides a set of tools and features which enable its community of users to coordinate ideas, influence, and funds, that is peer-to-peer, open, and includes its own incentive system of user actions to ensure accountability, quality engagement and verifiable information over time.',
+      'Led the team responsible for the delivery of a web app that provides a set of tools and features which enable its community of users to coordinate ideas, influence, and funds, that is peer-to-peer, open, and includes its own incentive system of user actions to ensure accountability, quality engagement and verifiable information over time.',
     period: 'Sep 2022 - June 2023',
     location: 'Lisbon, Portugal',
   },
