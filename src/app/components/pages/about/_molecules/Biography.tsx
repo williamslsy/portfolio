@@ -21,19 +21,21 @@ const Biography = () => {
             quick biography
           </motion.h3>
           <motion.p initial={{ y: '30%', opacity: 0 }} animate={{ y: '0', opacity: 1 }} transition={{ delay: 0.5 }}>
-            Greetings, I am Sylvester Olawale—an adept FE-oriented full-stack web developer, proficient DApp craftsman, and seasoned UI/UX designer. My commitment resides in sculpting exquisite,
-            utilitarian, and user-centric digital landscapes. Over a span of 7 years, I&apos;ve cultivated an unwavering drive to manifest my clients&apos; aspirations with ingenuity and innovation.
+            I am Sylvester Olawale, a seasoned FE heavy Full-stack DApp engineer with over 7 years of extensive experience in developing robust, scalable, and user-centric web applications. My career
+            has been driven by a continuous pursuit of excellence and a deep commitment to leveraging decentralized technology to creating functional, beautiful and secure digital experiences that
+            center on user needs and business goals. I am passionate about creating innovative solutions that push the boundaries of what is possible and deliver exceptional value to users and
+            businesses. I am relentless in my mission to achieve my clients&apos; goals with precision, speed, robust security, and scalability.
           </motion.p>
           <motion.p initial={{ y: '30%', opacity: 0 }} animate={{ y: '0', opacity: 1 }} transition={{ delay: 1 }}>
-            Beyond the realm of code and design, my journey is a testament to evolution and adaptability. From my initial foray into web development to immersing myself in decentralized applications,
-            each milestone has contributed to my growth. I&apos;ve refined my skills through the artistry of crafting seamless user interfaces and delved into the intricate world of blockchain,
-            merging technology with imagination. This holistic approach enables me to infuse versatility into every project, transforming abstract ideas into tangible digital realms.
+            Beyond coding and design, my career reflects continuous growth and adaptability. Starting with web development and moving into decentralized applications, every step has been crucial for
+            my development. I&apos;ve honed my skills in creating flawless user interfaces and explored the complex blockchain space, blending technology with creativity. This comprehensive approach
+            allows me to add versatility to every project, turning abstract concepts into practical digital solutions.
           </motion.p>
           <motion.p initial={{ y: '30%', opacity: 0 }} animate={{ y: '0', opacity: 1 }} transition={{ delay: 1.5 }}>
-            In an ever-evolving digital cosmos, my voyage as a creator has been nurtured by relentless curiosity. From conceiving intricate backend systems to shaping the very pixels that captivate
-            users, I&apos;ve embraced the intricate dance between logic and aesthetics. My toolkit includes a pantheon of technologies, from Nextjs, TailwindCSS, React and Node.js to Solidity and
-            Smart Contract Integration, each harnessed to materialize innovative solutions. My commitment goes beyond lines of code; it&apos;s an unwavering promise to weave narratives that resonate
-            and experiences that transcend.
+            As the digital space continues to expand, my journey as a developer thrives on endless curiosity. I’ve taken on the challenge of building detailed backend systems and designing user
+            interfaces that captivate. Juggling the precise demands of technology with the beauty of design, I work with a broad spectrum of tools from Next.js, Typescript, Tailwind CSS and UI
+            libraries of sorts to Node.js, SQL/NoSQL DBs and cutting-edge blockchain technologies like Solidity, Hardhat, Ethers libraries, Wagmi/Viem. My dedication extends beyond just writing code;
+            I’m committed to creating stories and experiences that better the world through decentralization and the proliferation of public goods enabling positive-sum games.
           </motion.p>
         </BiographyContainer>
         <Stats>

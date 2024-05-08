@@ -3,7 +3,7 @@ export const experienceData = [
     id: 1,
     position: 'Lead Developer | React-Next Frontend Developer | Full-Stack',
     company: 'Zuzalu-Zuzapp Core Team',
-    description: "At the direction of Ethereum's founder, Vitalik Buterin, I played a pivotal role in building Zuzapp, a ZK super app for coordination efforts in the Zuzalu network state community",
+    description: "Working directly with Ethereum's founder, Vitalik Buterin, I played a pivotal role in building Zuzapp, a ZK super app for coordination efforts in the Zuzalu network state community",
     period: 'July 2023 - Present',
     location: 'Lisbon, Portugal',
   },
@@ -54,6 +54,14 @@ export const experienceData = [
 export const educationData = [
   {
     id: 1,
+    position: 'Senior Next.js Engineer',
+    company: '',
+    description: 'Professional Next.js 14 & React Engineering Certification',
+    period: '2023-2024',
+    location: 'ByteGrad Academy',
+  },
+  {
+    id: 2,
     position: 'Senior React Developer',
     company: '',
     description: 'Triplebyte Advanced React Engineering Certification',
@@ -61,7 +69,7 @@ export const educationData = [
     location: 'Triplebyte',
   },
   {
-    id: 2,
+    id: 3,
     position: 'Advanced Solidity Developer',
     company: '',
     description: 'Mastering Solidity and Smart Contracts - Blockchain Development: Programming & Ethereum Stack',
@@ -69,7 +77,7 @@ export const educationData = [
     location: 'Udemy',
   },
   {
-    id: 3,
+    id: 4,
     position: 'Full-Stack Web Developer',
     company: '',
     description: 'The Complete Web Developer Bootcamp',
@@ -77,7 +85,7 @@ export const educationData = [
     location: 'London App Brewery',
   },
   {
-    id: 4,
+    id: 5,
     position: 'Full-Stack Web Developer',
     company: '',
     description: 'Zero-To-Mastery Academy',
@@ -85,7 +93,7 @@ export const educationData = [
     location: 'Udemy',
   },
   {
-    id: 5,
+    id: 6,
     position: 'React Developer',
     company: '',
     description: 'Code with Mosh: Mastering React.',
