@@ -21,10 +21,10 @@ const Biography = () => {
             quick biography
           </motion.h3>
           <motion.p initial={{ y: '30%', opacity: 0 }} animate={{ y: '0', opacity: 1 }} transition={{ delay: 0.5 }}>
-            I am Sylvester Olawale, a seasoned FE heavy Full-stack DApp engineer with over 7 years of extensive experience in developing robust, scalable, and user-centric web applications. My career
-            has been driven by a continuous pursuit of excellence and a deep commitment to leveraging decentralized technology to creating functional, beautiful and secure digital experiences that
-            center on user needs and business goals. I am passionate about creating innovative solutions that push the boundaries of what is possible and deliver exceptional value to users and
-            businesses. I am relentless in my mission to achieve my clients&apos; goals with precision, speed, robust security, and scalability.
+            Hello, I am Sylvester Olawale, a seasoned FE heavy Full-stack DApp engineer with over 7 years of extensive experience in developing robust, scalable, and user-centric web applications. My
+            career has been driven by a continuous pursuit of excellence and a deep commitment to leveraging decentralized technology to creating functional, beautiful and secure digital experiences
+            that center on user needs and business goals. I’m passionate about creating innovative solutions that push the boundaries of what’s possible and deliver exceptional value. I am relentless
+            in my mission to achieve my clients&apos; goals with precision, speed, robust security, and scalability.
           </motion.p>
           <motion.p initial={{ y: '30%', opacity: 0 }} animate={{ y: '0', opacity: 1 }} transition={{ delay: 1 }}>
             Beyond coding and design, my career reflects continuous growth and adaptability. Starting with web development and moving into decentralized applications, every step has been crucial for
