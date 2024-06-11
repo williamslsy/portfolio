@@ -4,7 +4,7 @@ import { styled } from 'styled-components';
 import ContentCard from '../../_molecules/ContentCard';
 import NumberCountAnimation from '@/app/components/Common/NumberCountAnimation';
 import { motion } from 'framer-motion';
-import Sylvester from '@/images/olawale.jpg';
+import Waliba from '@/images/waliba.png';
 
 const Biography = () => {
   return (
@@ -13,7 +13,7 @@ const Biography = () => {
       <ContentContainer>
         <ImageContainer>
           <motion.div initial={{ y: 100 }} animate={{ y: 0 }} transition={{ type: 'spring', stiffness: 100 }}>
-            <ContentCard img={Sylvester} alt="A picture of Sylvester Olawale" borderRadius priority={true} fullWidth imageAvail />
+            <ContentCard img={Waliba} alt="A picture of Sylvester Olawale" borderRadius priority={true} fullWidth imageAvail />
           </motion.div>
         </ImageContainer>
         <BiographyContainer>
