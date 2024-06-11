@@ -23,6 +23,10 @@ const articlesData = [
     tags: [
       { id: 3, name: 'Blockchain' },
       { id: 4, name: 'NFTs' },
+      { id: 5, name: 'Wagmi' },
+      { id: 6, name: 'Next.js' },
+      { id: 7, name: 'Smart Contracts' },
+      { id: 8, name: 'Typescript' },
     ],
     url: 'https://medium.com/@donwaleyb/mint-your-own-nfts-with-wagmi-a-beginners-guide-6148f9ee324f',
     contentBlocks: [{ content: 'Getting Started with NFTs' }, { content: 'Using Wagmi for NFT development' }],
