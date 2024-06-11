@@ -1,33 +1,46 @@
+import React, { Fragment } from 'react';
 import Article from '@/app/components/pages/articles/article';
+import articlesData from '@/lib/constants'; // Ensure the data is correctly imported
 import { Metadata, ResolvingMetadata } from 'next';
-import { Fragment } from 'react';
 
-type Props = {
-  params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-};
+// Define the props type for the page component
+interface ArticleSinglePageProps {
+  params: {
+    slug: string;
+  };
+}
 
-interface ResultType extends Response {
+// Define the structure of the data used in articles
+interface ArticleData {
+  id: string;
   title: string;
-  contentBlocks: any[];
+  contentBlocks: { content: string }[];
   cover_image: string;
   tags: { name: string }[];
 }
+
+// Define props for metadata generation function
+interface Props {
+  params: { slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+}
+
+// Generate metadata for SEO and social sharing
 export async function generateMetadata({ params, searchParams }: Props, parent: ResolvingMetadata): Promise<Metadata> {
-  // fetch data
-  const result = (await getData(params.slug)) as ResultType;
+  const result = articlesData.find((article) => article.id === params.slug) as ArticleData;
+  if (!result) throw new Error('Article not found');
 
   return {
     title: result.title,
-    description: result.contentBlocks[1].content,
-    keywords: Object.values(result.tags).join(','),
+    description: result.contentBlocks[1]?.content || '',
+    keywords: result.tags.map((tag) => tag.name).join(','),
     authors: [{ name: 'Waliba', url: 'https://github.com/williamslsy' }],
     publisher: 'Waliba',
     openGraph: {
       title: result.title,
-      description: result.contentBlocks[1].content,
+      description: result.contentBlocks[1]?.content || '',
       type: 'article',
-      url: '/blog',
+      url: `/blog/${params.slug}`,
       images: [result.cover_image],
       siteName: 'Waliba',
       locale: 'en_US',
@@ -35,20 +48,11 @@ export async function generateMetadata({ params, searchParams }: Props, parent: 
   };
 }
 
-async function getData(params: string) {
-  let res = await fetch(`https://api.ricqcodes.dev/api/posts/${params}`);
+// Component that renders a single article
+const ArticleSinglePage = ({ params: { slug } }: ArticleSinglePageProps) => {
+  const result = articlesData.find((article) => article.id === slug) as ArticleData;
+  if (!result) throw new Error('Article not found');
 
-  if (!res.ok) {
-    throw new Error('Failed to fetch article');
-  }
-
-  res = await res.json();
-
-  return res;
-}
-
-const ArticleSinglePage = async ({ params }: { params: { slug: string } }) => {
-  const result = await getData(params.slug);
   return <Fragment>{<Article post={result} />}</Fragment>;
 };
 
