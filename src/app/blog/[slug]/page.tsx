@@ -27,7 +27,7 @@ export async function generateMetadata({ params, searchParams }: Props, parent: 
       title: result.title,
       description: result.contentBlocks[1].content,
       type: 'article',
-      url: `https://waliba.netlify.app/blog/${params.slug}`,
+      url: '/blog',
       images: [result.cover_image],
       siteName: 'Waliba',
       locale: 'en_US',
@@ -36,9 +36,7 @@ export async function generateMetadata({ params, searchParams }: Props, parent: 
 }
 
 async function getData(params: string) {
-  let res = await fetch(`https://api.ricqcodes.dev/api/posts/${params}`, {
-    next: { revalidate: 0 },
-  });
+  let res = await fetch(`https://api.ricqcodes.dev/api/posts/${params}`);
 
   if (!res.ok) {
     throw new Error('Failed to fetch article');

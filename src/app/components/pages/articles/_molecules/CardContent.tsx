@@ -2,27 +2,32 @@ import React from 'react';
 import { styled } from 'styled-components';
 import { BiSolidTimeFive, BiSolidCalendar } from 'react-icons/bi';
 import Category from './Category';
-import { formatDate } from '@/helper';
+import { formatDate } from '@/lib/utils';
 
 interface Iprops {
   createdAt?: number;
   title: string;
+  tags: { id: number; name: string }[];
   description: string;
   readTime?: number;
-  tags: { id: number; name: string }[];
 }
+
 const CardContent = ({ createdAt, title, tags, readTime }: Iprops) => {
+  // Check if createdAt is provided before formatting
+  const formattedDate = createdAt ? formatDate(createdAt) : 'Date not available';
+  const readingTime = readTime ? `${readTime} min read` : 'Read time not available';
+
   return (
     <ContentContainer>
       <InnerContainer>
         <Metadata>
           <div>
             <BiSolidCalendar />
-            Jan 28, 2024
+            {formattedDate}
           </div>
           <div>
             <BiSolidTimeFive />
-            10 min read
+            {readingTime}
           </div>
         </Metadata>
         <h2>{title}</h2>
@@ -40,6 +45,7 @@ export default CardContent;
 
 const ContentContainer = styled.div`
   width: 100%;
+  margin-bottom: 3rem; // Add margin between cards
 `;
 
 const InnerContainer = styled.div`

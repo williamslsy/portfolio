@@ -19,30 +19,24 @@ const Articles = ({ tags, allPost, params }: Iprops) => {
   const searchParams = useSearchParams();
   const tag = searchParams.get('tag');
 
-  // useEffect(() => {
-  //   const controller = new AbortController();
-  //   console.log(tag);
-  //   const fetchBlogPosts = async () => {
-  //     const signal = controller.signal;
-
-  //     try {
-  //       const response = await fetch(`https://dev.to/dev_waliba/api/posts/byTag/${tag}`, { signal });
-  //       const data = await response.json();
-  //       setAllPosts(data);
-  //     } catch (error: any) {
-  //       console.log(error);
-  //       if (error.name === 'AbortError') {
-  //         // Request was cancelled
-  //       } else {
-  //         // Handle other errors
-  //       }
-  //     }
-  //   };
-
-  //   tag && fetchBlogPosts();
-
-  //   return () => controller.abort();
-  // }, [tag]);
+  const blogPosts = [
+    {
+      createdAt: new Date('2024-01-28').getTime(),
+      title: 'Demystifying Custom Hooks in React',
+      description: '',
+      readTime: 10,
+      tags: [],
+      url: 'https://dev.to/dev_waliba/demystifying-custom-hooks-in-react-38md',
+    },
+    {
+      createdAt: new Date('2024-06-11').getTime(),
+      title: 'Mint your Own NFTs with Wagmi — A Beginner’s Guide.',
+      description: '',
+      readTime: 13,
+      tags: [],
+      url: 'https://medium.com/@donwaleyb/mint-your-own-nfts-with-wagmi-a-beginners-guide-6148f9ee324f',
+    },
+  ];
 
   return (
     <PageContainer>
@@ -50,11 +44,13 @@ const Articles = ({ tags, allPost, params }: Iprops) => {
         <InnerContent>
           <Section>
             {params && <h3>{`${params} tag with (${allPosts.length}) articles`}</h3>}
-            <SectionBlog>
-              <Link href={`https://dev.to/dev_waliba/demystifying-custom-hooks-in-react-38md`}>
-                <ContentCard fullWidth ExtraComp={<CardContent title={'Demystifying Custom Hooks in React'} description={''} tags={[]} />} />
-              </Link>
-            </SectionBlog>
+            {blogPosts.map((post) => (
+              <SectionBlog key={post.title}>
+                <Link href={post.url}>
+                  <ContentCard fullWidth ExtraComp={<CardContent title={post.title} description={post.description} tags={post.tags} createdAt={post.createdAt} readTime={post.readTime} />} />
+                </Link>
+              </SectionBlog>
+            ))}
           </Section>
           <AsideSection>
             <Aside>
@@ -123,6 +119,10 @@ const SectionBlog = styled.div`
   display: flex;
   flex-direction: column;
   gap: 6.4rem;
+
+  > a {
+    margin-bottom: 2rem;
+  }
 `;
 
 const AsideSection = styled.section`
